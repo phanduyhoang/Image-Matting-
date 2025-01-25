@@ -1,8 +1,35 @@
-# Image-Matting-
-this project was done thanks to this paper
-https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf
-alpha matte result is in deep-image-matting-network-good-result.ipynb
+# Image-Matting
 
-please read it for more technical insights
-the refined version trained on 27 images (due to the lack of high quality ground truth mask). As the image resolution became higher the result became better 
-For input you will need a RGB image and its trimap (4 channels). I also create a model specifically for trimap extraction. Which needs to be refined on larger data an train on higher resolution images. you can find the implementation in trimap.py (or in some notebook I don't remember). I trained on 256x256 px images which doesn't give very goood result
+This project was developed based on the paper:  
+[**Total Relighting: Learning to Relight Images for Realistic Lighting Transfer**](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)  
+
+The alpha matte result is available in:  
+`deep-image-matting-network-good-result.ipynb`  
+
+For more technical insights, please refer to the paper and the mentioned notebook.  
+
+## Refined Version
+
+- Trained on **27 images** (due to the lack of high-quality ground truth masks).  
+- As the image resolution increased, the results improved.  
+
+### Input Requirements
+
+- **RGB Image**  
+- **Trimap (4 channels)**  
+
+## Trimap Extraction Model
+
+A separate model was developed specifically for trimap extraction.  
+
+### Details:
+- Requires refinement on larger datasets.  
+- Needs training on higher-resolution images.  
+- Current training was conducted on **256x256 px** images, resulting in suboptimal performance.  
+
+Implementation can be found in:  
+- `trimap.py`  
+- (Or in some notebook, exact file unknown).  
+
+---
+Feel free to explore the implementation and suggest improvements!
