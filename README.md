@@ -10,7 +10,7 @@ For more technical insights, please refer to the paper and the mentioned noteboo
 
 ## Refined Version
 
-- Trained on **27 images** (due to the lack of high-quality ground truth masks).  
+- Trained on **27 images** (due to the lack of high-quality ground truth masks) on kaggle GPU T4 x2  
 - As the image resolution increased, the results improved.  
 
 ### Input Requirements
